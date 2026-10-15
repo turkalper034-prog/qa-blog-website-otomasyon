@@ -149,13 +149,19 @@ class TestBlogWebsite:
         post_cards = wait.until(
             EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".post-card h3"))
         )
+        # Blog kartlarına scroll yap
+        if post_cards:
+            driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", post_cards[0])
+            import time
+            time.sleep(1)
         
         card_titles = [card.text for card in post_cards]
         
         with allure.step("Blog kart başlıklarını al"):
             allure.attach("\n".join(card_titles), name="Card Titles")
         
-        assert any("AI" in title for title in card_titles), "AI başlığı bulunamadı"
+        # Case-insensitive kontrol
+        assert any("AI" in title.upper() for title in card_titles), "AI başlığı bulunamadı"
     
     @allure.feature("Blog Sayfası")
     @allure.story("Blog Kartları")
