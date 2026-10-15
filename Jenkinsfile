@@ -19,7 +19,7 @@ pipeline {
                 echo 'Setting up Python environment...'
                 bat '''
                     "C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" --version
-                    "C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pip.exe" install --upgrade pip
+                    "C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m pip install --upgrade pip
                 '''
             }
         }
