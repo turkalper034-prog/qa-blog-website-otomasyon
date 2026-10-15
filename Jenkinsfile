@@ -17,8 +17,8 @@ pipeline {
         stage('Setup Python Environment') {
             steps {
                 echo 'Setting up Python environment...'
-                sh '''
-                    python --version || python3 --version
+                bat '''
+                    python --version
                     pip install --upgrade pip
                 '''
             }
@@ -27,15 +27,15 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies...'
-                sh 'pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
         
         stage('Run Tests') {
             steps {
                 echo 'Running Selenium tests...'
-                sh '''
-                    mkdir -p allure-results
+                bat '''
+                    if not exist allure-results mkdir allure-results
                     pytest tests/ --alluredir=allure-results --html=report.html --self-contained-html -v
                 '''
             }
@@ -44,7 +44,7 @@ pipeline {
         stage('Generate Allure Report') {
             steps {
                 echo 'Generating Allure test report...'
-                sh 'allure generate allure-results --clean -o allure-report'
+                bat 'allure generate allure-results --clean -o allure-report'
             }
             post {
                 always {
