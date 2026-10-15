@@ -1,6 +1,38 @@
-# 🧪 Blog Website Test Automation
+<div align="center">
 
-Profesyonel Selenium + Pytest test otomasyon projesi. Blog web sitesini otomatik test eder ve HTML raporu oluşturur.
+# 🧪 QA Blog Website Test Automation
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-4.15-green?logo=selenium&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-7.4-red?logo=pytest&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-2.440-red?logo=jenkins&logoColor=white)
+![License](https://img.shields.io/badge/License-Educational-yellow)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+
+**Profesyonel Selenium + Pytest + Jenkins CI/CD Test Otomasyon Projesi**
+
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)]()
+[![Tests](https://img.shields.io/badge/Tests-16%2F16%20Passing-success)]()
+[![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-blue)]()
+
+</div>
+
+---
+
+## 📖 Hakkında
+
+Bu proje, **Alper Türk** tarafından geliştirilen profesyonel QA & Test Otomasyon blog web sitesini otomatik test eder. Modern web teknolojileri ve en iyi test uygulamaları kullanılarak oluşturulmuştur.
+
+### ✨ Öne Çıkan Özellikler
+
+- 🤖 **Selenium WebDriver** - Chrome browser otomasyonu
+- 🧪 **Pytest Framework** - Modern test yapısı
+- 🚀 **Jenkins CI/CD** - Otomatik pipeline entegrasyonu
+- 📊 **HTML Raporlama** - Detaylı test sonuçları
+- 🎨 **Modern Web Sitesi** - SEO & Accessibility uyumlu
+- 🐳 **Docker Desteği** - Konteynerize çalıştırma
+
+---
 
 ## 🌐 Test Edilen Web Sitesi
 
@@ -8,46 +40,68 @@ Bu proje, **Alper Türk** tarafından geliştirilen profesyonel QA & Test Otomas
 
 ### 🎨 Web Sitesi Özellikleri
 
-#### SEO Optimizasyonu
-- ✅ Meta description ve keywords
-- ✅ Open Graph meta tagleri (Facebook paylaşımı için)
-- ✅ Twitter Card meta tagleri
-- ✅ Structured Data (Schema.org JSON-LD)
-- ✅ Semantic HTML5 yapısı
-- ✅ SEO-friendly URL yapısı
+#### 🔍 SEO Optimizasyonu
+| Özellik | Durum |
+|---------|-------|
+| Meta description & keywords | ✅ |
+| Open Graph meta tagleri | ✅ |
+| Twitter Card meta tagleri | ✅ |
+| Schema.org Structured Data | ✅ |
+| Semantic HTML5 yapısı | ✅ |
+| SEO-friendly URL yapısı | ✅ |
 
-#### Accessibility (Erişilebilirlik)
-- ✅ ARIA labels ve aria-hidden attributes
-- ✅ Semantic HTML elementleri
-- ✅ Keyboard navigasyon desteği
-- ✅ Screen reader uyumlu
-- ✅ Color contrast uyumu
+#### ♿ Accessibility (Erişilebilirlik)
+| Özellik | Durum |
+|---------|-------|
+| ARIA labels & attributes | ✅ |
+| Semantic HTML elementleri | ✅ |
+| Keyboard navigasyon desteği | ✅ |
+| Screen reader uyumlu | ✅ |
+| Color contrast uyumu | ✅ |
 
-#### Modern UI/UX
-- ✅ Glassmorphism tasarım
-- ✅ 3D laptop animasyonu
-- ✅ Hareketli video arka plan
-- ✅ Smooth scroll navigasyon
-- ✅ Parallax efektleri
-- ✅ Hover animasyonları
-- ✅ Responsive tasarım (mobil uyumlu)
-- ✅ Back to Top butonu
-- ✅ Hero bölümü CTA butonları
-- ✅ Blog kartlarında meta bilgiler
-- ✅ Yetenekler bölümü
+#### 🎨 Modern UI/UX
+| Özellik | Durum |
+|---------|-------|
+| Glassmorphism tasarım | ✅ |
+| 3D laptop animasyonu | ✅ |
+| Hareketli video arka plan | ✅ |
+| Smooth scroll navigasyon | ✅ |
+| Parallax efektleri | ✅ |
+| Hover animasyonları | ✅ |
+| Responsive tasarım (mobil uyumlu) | ✅ |
+| Back to Top butonu | ✅ |
+| Hero bölümü CTA butonları | ✅ |
+| Blog kartlarında meta bilgiler | ✅ |
+| Yetenekler bölümü | ✅ |
 
-#### Teknik Detaylar
-- ✅ CSS Grid ve Flexbox
-- ✅ CSS animasyonları ve transitions
-- ✅ JavaScript Intersection Observer
-- ✅ Modern CSS backdrop-filter
-- ✅ Gradient renkler
-- ✅ Box-shadow efektleri
-- ✅ Font Awesome iconları
+#### ⚙️ Teknik Detaylar
+| Teknoloji | Durum |
+|-----------|-------|
+| CSS Grid ve Flexbox | ✅ |
+| CSS animasyonları ve transitions | ✅ |
+| JavaScript Intersection Observer | ✅ |
+| Modern CSS backdrop-filter | ✅ |
+| Gradient renkler | ✅ |
+| Box-shadow efektleri | ✅ |
+| Font Awesome iconları | ✅ |
+
+---
 
 ## 📊 Test Sonuçları
 
-✅ **16/16 Test Başarılı** - Tüm testler geçti!
+<div align="center">
+
+### ✅ 16/16 Test Başarılı
+
+| Metrik | Değer |
+|--------|-------|
+| Toplam Test | 16 |
+| Başarılı | 16 ✅ |
+| Başarısız | 0 |
+| Süre | ~14 saniye |
+| Kapsam | %100 |
+
+</div>
 
 ## 🛠️ Kullanılan Teknolojiler ve Araçlar
 
@@ -63,22 +117,26 @@ Bu proje, **Alper Türk** tarafından geliştirilen profesyonel QA & Test Otomas
 
 ## 📋 Test Senaryoları
 
-1. ✅ **Sayfa Başlığı Kontrolü** - Sayfa başlığının doğru olduğunu doğrular
-2. ✅ **Header Kontrolü** - Header'da "Alper Türk - QA Blog" yazısını doğrular
-3. ✅ **Hero Bölümü** - Hero bölümünde "Test Otomasyonu" yazısını doğrular
-4. ✅ **Laptop Kontrolü** - 3D laptop elementinin var olduğunu doğrular
-5. ✅ **Laptop Ekranı** - Laptop ekranında kod editörünü doğrular
-6. ✅ **Kod İçeriği** - Laptop ekranında Selenium kodunu doğrular
-7. ✅ **Blog Kartları** - 4 blog kartının olduğunu doğrular
-8. ✅ **Selenium Kartı** - Blog kartlarında Selenium başlığını doğrular
-9. ✅ **Cypress Kartı** - Blog kartlarının varlığını doğrular
-10. ✅ **Hakkımda Bölümü** - Alper Türk, ADÜ, YBS bilgilerini doğrular
-11. ✅ **İletişim Email** - Gmail adresini doğrular
-12. ✅ **İletişim LinkedIn** - LinkedIn linkini doğrular
-13. ✅ **İletişim GitHub** - GitHub linkini doğrular
-14. ✅ **Navigation** - Navigation linklerini doğrular
-15. ✅ **Footer** - Footer'da Alper Türk yazısını doğrular
-16. ✅ **Video Arka Plan** - Video elementini doğrular
+| # | Test Senaryosu | Açıklama | Severity |
+|---|----------------|----------|----------|
+| 1 | 📄 Sayfa Başlığı Kontrolü | Sayfa başlığının doğru olduğunu doğrular | 🔴 CRITICAL |
+| 2 | 🎯 Header Kontrolü | Header'da "Alper Türk - QA Blog" yazısını doğrular | 🔴 CRITICAL |
+| 3 | 🚀 Hero Bölümü | Hero bölümünde "Test Otomasyonu" yazısını doğrular | 🟡 NORMAL |
+| 4 | 💻 Laptop Kontrolü | 3D laptop elementinin var olduğunu doğrular | 🟡 NORMAL |
+| 5 | 🖥️ Laptop Ekranı | Laptop ekranında kod editörünü doğrular | 🟡 NORMAL |
+| 6 | 💻 Kod İçeriği | Laptop ekranında Selenium kodunu doğrular | 🟢 MINOR |
+| 7 | 📰 Blog Kartları | 4 blog kartının olduğunu doğrular | 🟡 NORMAL |
+| 8 | 🤖 Selenium Kartı | Blog kartlarında AI/Selenium başlığını doğrular | 🟢 MINOR |
+| 9 | 🌿 Cypress/Java Kartı | Blog kartlarının varlığını doğrular | 🟢 MINOR |
+| 10 | 👤 Hakkımda Bölümü | Alper Türk, ADÜ, YBS bilgilerini doğrular | 🟡 NORMAL |
+| 11 | 📧 İletişim Email | Gmail adresini doğrular | 🟡 NORMAL |
+| 12 | 💼 İletişim LinkedIn | LinkedIn linkini doğrular | 🟡 NORMAL |
+| 13 | 🐙 İletişim GitHub | GitHub linkini doğrular | 🟡 NORMAL |
+| 14 | 🧭 Navigation | Navigation linklerini doğrular | 🟢 MINOR |
+| 15 | 📝 Footer | Footer'da Alper Türk yazısını doğrular | 🟢 MINOR |
+| 16 | 🎬 Video Arka Plan | Video elementini doğrular | ⚪ TRIVIAL |
+
+---
 
 ## 🚀 Kurulum
 
@@ -138,47 +196,64 @@ start report.html
 
 ```
 blog-sayfasi/
-├── tests/
+├── 📂 tests/
 │   ├── __init__.py
-│   └── test_blog.py          # Selenium testleri
-├── index.html                # Test edilecek web sitesi
-├── style.css                 # Web sitesi stilleri
-├── script.js                 # Web sitesi scriptleri
-├── background.mp4            # Arka plan videosu
-├── requirements.txt          # Python dependencies
-├── run_tests.bat            # Otomatik test koşma scripti
-├── README.md                # Bu dosya
-└── report.html              # Test raporu (testlerden sonra oluşur)
+│   └── test_blog.py          # 🧪 Selenium testleri
+├── 📄 qa-blog.html           # 🌐 Test edilecek web sitesi
+├── 🎨 style.css              # 🎨 Web sitesi stilleri
+├── 📜 script.js              # ⚡ Web sitesi scriptleri
+├── 🎬 background.mp4         # 🎬 Arka plan videosu
+├── 📋 requirements.txt       # 📦 Python dependencies
+├── 🚀 run_tests.bat          # ▶️ Otomatik test koşma scripti
+├── 🐳 Dockerfile             # 🐳 Docker konfigürasyonu
+├── 🔧 Jenkinsfile            # 🚀 Jenkins CI/CD pipeline
+├── 📄 .gitignore             # 🚫 Git ignore dosyası
+├── 📖 README.md              # 📖 Bu dosya
+└── 📊 report.html            # 📊 Test raporu (testlerden sonra oluşur)
 ```
+
+---
 
 ## 🔧 Test Özellikleri
 
-- 🤖 **Selenium WebDriver** - Chrome browser otomasyonu
-- 🧪 **Pytest** - Test framework
-- 📊 **Allure** - Profesyonel test raporlama
-- 📄 **Pytest-HTML** - HTML rapor oluşturma
-- 🚗 **WebDriver Manager** - Otomatik driver yönetimi
-- ⏱️ **Explicit Waits** - Stabil element bekleme
-- 📎 **Attachments** - Test sonuçlarına ek bilgiler
-- 🔄 **Session Scope** - Tek browser tüm testler için
+| Özellik | Açıklama |
+|---------|----------|
+| 🤖 **Selenium WebDriver** | Chrome browser otomasyonu |
+| 🧪 **Pytest** | Modern test framework |
+| 📊 **Allure** | Detaylı test raporlama (raw data) |
+| 📄 **Pytest-HTML** | HTML rapor oluşturma |
+| 🚗 **WebDriver Manager** | Otomatik driver yönetimi |
+| ⏱️ **Explicit Waits** | Stabil element bekleme |
+| 📎 **Attachments** | Test sonuçlarına ek bilgiler |
+| 🔄 **Session Scope** | Tek browser tüm testler için |
+
+---
 
 ## 🎯 Test Severity Seviyeleri
 
-- 🔴 **CRITICAL** - Sayfa başlığı, header
-- 🟡 **NORMAL** - Hero bölümü, blog kartları, hakkımda, iletişim
-- 🟢 **MINOR** - Kod içeriği, navigation, footer
-- ⚪ **TRIVIAL** - Video arka plan
+| Severity | Renk | Açıklama |
+|----------|------|----------|
+| 🔴 **CRITICAL** | Kırmızı | Sayfa başlığı, header - Kritik |
+| 🟡 **NORMAL** | Sarı | Hero bölümü, blog kartları, hakkımda, iletişim - Normal |
+| 🟢 **MINOR** | Yeşil | Kod içeriği, navigation, footer - Küçük |
+| ⚪ **TRIVIAL** | Beyaz | Video arka plan - Önemsiz |
+
+---
 
 ## 📈 Performans İyileştirmeleri
 
-- ✅ **Session Scope Fixture** - Tüm testler için tek browser kullanımı
-- ✅ **Explicit Waits** - Stabil element bekleme
-- ✅ **Scroll into View** - Elementlerin görünür olduğundan emin olma
-- ✅ **Tek Browser** - Çok fazla sekme açılma sorunu çözüldü
+| İyileştirme | Durum |
+|-------------|-------|
+| Session Scope Fixture | ✅ Tek browser tüm testler için |
+| Explicit Waits | ✅ Stabil element bekleme |
+| Scroll into View | ✅ Elementlerin görünür olduğundan emin olma |
+| Tek Browser | ✅ Çok fazla sekme açılma sorunu çözüldü |
+
+---
 
 ## 🎨 Web Sitesi Teknolojileri
 
-### Frontend
+### Frontend Stack
 - **HTML5** - Semantic markup
 - **CSS3** - Modern styling, animations, glassmorphism
 - **JavaScript (ES6+)** - Interactivity, animations
@@ -209,39 +284,64 @@ blog-sayfasi/
 
 ## 📝 Notlar
 
-- Testler local HTML dosyası üzerinde çalışır
-- Her test oturumunda tek browser açılır
-- Test sonuçları `report.html` dosyasında saklanır
-- Tüm testler ~14 saniyede tamamlanır
-- Web sitesi tamamen responsive tasarım
-- SEO ve accessibility uyumlu
+- ✅ Testler local HTML dosyası üzerinde çalışır
+- ✅ Her test oturumunda tek browser açılır
+- ✅ Test sonuçları `report.html` dosyasında saklanır
+- ✅ Tüm testler ~14 saniyede tamamlanır
+- ✅ Web sitesi tamamen responsive tasarım
+- ✅ SEO ve accessibility uyumlu
+
+---
 
 ## 👨‍💻 Geliştirici
 
-**Alper Türk** - QA & Test Otomasyon Uzmanı
+<div align="center">
 
-- 📧 Email: turkalper034@gmail.com
-- 💼 LinkedIn: [Profil](https://www.linkedin.com/in/alper-t%C3%BCrk-633696386/?isSelfProfile=true)
-- 🐙 GitHub: [turkalper034-prog](https://github.com/turkalper034-prog)
+### **Alper Türk**  
+**QA & Test Otomasyon Uzmanı**
+
+| 📧 Email | 💼 LinkedIn | 🐙 GitHub |
+|---------|------------|-----------|
+| [turkalper034@gmail.com](mailto:turkalper034@gmail.com) | [Profil](https://www.linkedin.com/in/alper-t%C3%BCrk-633696386/?isSelfProfile=true) | [turkalper034-prog](https://github.com/turkalper034-prog) |
+
+</div>
+
+---
 
 ## 🎓 Eğitim
 
-**Adnan Menderes Üniversitesi** - Yönetim Bilişim Sistemleri (YBS) Mezunu
+| Üniversite | Bölüm | Durum |
+|------------|-------|-------|
+| 🎓 **Adnan Menderes Üniversitesi** | Yönetim Bilişim Sistemleri (YBS) | ✅ Mezun |
+
+---
 
 ## 🛠️ Yetenekler
 
-- Selenium WebDriver
-- Cypress
-- Python
-- Pytest
-- JavaScript
-- Git
-- Test Otomasyonu
-- QA Methodolojileri
-- Cucumber
--Jenkins
--Postman
--Newman
+<div align="center">
+
+### Test Otomasyonu
+![Selenium](https://img.shields.io/badge/Selenium-WebDriver-green?logo=selenium)
+![Cypress](https://img.shields.io/badge/Cypress-E2E-red?logo=cypress)
+![Cucumber](https://img.shields.io/badge/Cucumber-BDD-blue?logo=cucumber)
+
+### Programlama Dilleri
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+
+### Test Framework'leri
+![Pytest](https://img.shields.io/badge/Pytest-7.4-red?logo=pytest)
+![Jenkins](https://img.shields.io/badge/Jenkins-2.440-red?logo=jenkins)
+
+### API Test Araçları
+![Postman](https://img.shields.io/badge/Postman-API-orange?logo=postman)
+![Newman](https://img.shields.io/badge/Newman-CLI-green)
+
+### Diğer
+![Git](https://img.shields.io/badge/Git-Version%20Control-orange?logo=git)
+![QA](https://img.shields.io/badge/QA-Methodologies-blue)
+
+</div>
 
 ## 📄 Lisans
 
@@ -249,9 +349,27 @@ Bu proje eğitim ve test amaçlıdır.
 
 ## 🚀 Jenkins CI/CD Pipeline
 
+<div align="center">
+
+![Jenkins](https://img.shields.io/badge/Jenkins-2.440-red?logo=jenkins&logoColor=white)
+![Pipeline](https://img.shields.io/badge/Pipeline-Declarative-blue)
+![OS](https://img.shields.io/badge/OS-Windows-blue)
+
 Bu proje Jenkins ile CI/CD pipeline olarak yapılandırılmıştır. Her push işlemi otomatik test çalıştırır.
 
-### Jenkins Kurulum
+</div>
+
+### 📋 Pipeline Stages
+
+| Stage | Açıklama | Durum |
+|-------|----------|-------|
+| 📥 **Checkout** | GitHub'dan kod çekme | ✅ |
+| 🐍 **Setup Python** | Python ortamı hazırlama | ✅ |
+| 📦 **Install Dependencies** | Python paketlerini yükleme | ✅ |
+| 🧪 **Run Tests** | Selenium testlerini çalıştırma | ✅ |
+| 📊 **Archive Artifacts** | Test raporlarını arşivleme | ✅ |
+
+### 🔧 Jenkins Kurulum
 
 #### Adım 1: Jenkins Kurulumu
 
@@ -275,10 +393,12 @@ sudo systemctl start jenkins
 #### Adım 2: Jenkins Eklentileri
 
 Jenkins'e giriş yaptıktan sonra şu eklentileri kurun:
-- **Pipeline Plugin** (varsayılan olarak yüklü)
-- **Git Plugin** (varsayılan olarak yüklü)
-- **Allure Plugin** (test raporları için)
-- **HTML Publisher Plugin** (HTML raporları için)
+
+| Eklenti | Amaç |
+|---------|------|
+| Pipeline Plugin | Pipeline desteği (varsayılan) |
+| Git Plugin | Git entegrasyonu (varsayılan) |
+| HTML Publisher Plugin | HTML raporları için |
 
 #### Adım 3: Pipeline Oluşturma
 
@@ -307,15 +427,9 @@ Jenkins'e giriş yaptıktan sonra şu eklentileri kurun:
 
 1. Jenkins Dashboard → Pipeline'ı seç
 2. "Build Now" tıkla
-3. Pipeline otomatik olarak çalışır:
-   - Checkout
-   - Python kurulumu
-   - Dependencies kurulumu
-   - Test çalıştırma
-   - Allure raporu oluşturma
-   - Artifact arşivleme
+3. Pipeline otomatik olarak çalışır
 
-### Docker ile Çalıştırma (Opsiyonel)
+### 🐳 Docker ile Çalıştırma (Opsiyonel)
 
 Docker kullanarak test ortamını izole edebilirsiniz:
 
@@ -327,18 +441,24 @@ docker build -t qa-blog-automation .
 docker run --rm -v $(pwd)/report.html:/app/report.html qa-blog-automation
 ```
 
-### Pipeline Stages
+---
 
-1. **Checkout** - GitHub'dan kod çekme
-2. **Setup Python Environment** - Python ortamı hazırlama
-3. **Install Dependencies** - Python paketlerini yükleme
-4. **Run Tests** - Selenium testlerini çalıştırma
-5. **Generate Allure Report** - Allure raporu oluşturma
-6. **Archive Artifacts** - Test raporlarını arşivleme
+<div align="center">
+
+## 📊 Proje Durumu
+
+| Metrik | Durum |
+|--------|-------|
+| 🧪 **Test Sonucu** | ✅ 16/16 Başarılı |
+| 🌐 **Web Sitesi** | ✅ Profesyonel SEO & Accessibility |
+| 🚀 **Jenkins Pipeline** | ✅ CI/CD Entegre |
+| 🐳 **Docker** | ✅ Destekliyor |
+| 📅 **Son Güncelleme** | 15 Ekim 2026 |
 
 ---
 
-**Son Güncelleme:** 15 Ekim 2026
-**Test Sonucu:** ✅ 16/16 Başarılı
-**Web Sitesi:** ✅ Profesyonel SEO & Accessibility Optimizasyonlu
-**Jenkins Pipeline:** ✅ CI/CD Entegre
+**⭐ Bu projeyi beğendiyseniz yıldız vermeyi unutmayın!**
+
+Made with ❤️ by [Alper Türk](https://github.com/turkalper034-prog)
+
+</div>
