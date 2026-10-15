@@ -247,8 +247,98 @@ blog-sayfasi/
 
 Bu proje eğitim ve test amaçlıdır.
 
+## 🚀 Jenkins CI/CD Pipeline
+
+Bu proje Jenkins ile CI/CD pipeline olarak yapılandırılmıştır. Her push işlemi otomatik test çalıştırır.
+
+### Jenkins Kurulum
+
+#### Adım 1: Jenkins Kurulumu
+
+**Windows:**
+```bash
+# Jenkins indir
+# https://www.jenkins.io/download/ adresinden Windows installer'ı indirin
+# Kurulumu tamamlayın
+# http://localhost:8080 adresinden Jenkins'e erişin
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+sudo systemctl start jenkins
+```
+
+#### Adım 2: Jenkins Eklentileri
+
+Jenkins'e giriş yaptıktan sonra şu eklentileri kurun:
+- **Pipeline Plugin** (varsayılan olarak yüklü)
+- **Git Plugin** (varsayılan olarak yüklü)
+- **Allure Plugin** (test raporları için)
+- **HTML Publisher Plugin** (HTML raporları için)
+
+#### Adım 3: Pipeline Oluşturma
+
+1. Jenkins Dashboard → "New Item"
+2. Pipeline adı: `qa-blog-website-pipeline`
+3. "Pipeline" seç
+4. "OK" tıkla
+5. Pipeline konfigürasyonu:
+   - **Definition**: Pipeline script from SCM
+   - **SCM**: Git
+   - **Repository URL**: `https://github.com/turkalper034-prog/qa-blog-website-otomasyon.git`
+   - **Branch**: `*/main`
+   - **Script Path**: `Jenkinsfile`
+6. "Save" tıkla
+
+#### Adım 4: GitHub Webhook (Otomatik Tetikleme)
+
+1. GitHub repository'ye git
+2. Settings → Webhooks → "Add webhook"
+3. Payload URL: `http://YOUR_JENKINS_URL/github-webhook/`
+4. Content type: `application/json`
+5. "Just the push event" seç
+6. "Add webhook" tıkla
+
+#### Adım 5: Pipeline'ı Çalıştır
+
+1. Jenkins Dashboard → Pipeline'ı seç
+2. "Build Now" tıkla
+3. Pipeline otomatik olarak çalışır:
+   - Checkout
+   - Python kurulumu
+   - Dependencies kurulumu
+   - Test çalıştırma
+   - Allure raporu oluşturma
+   - Artifact arşivleme
+
+### Docker ile Çalıştırma (Opsiyonel)
+
+Docker kullanarak test ortamını izole edebilirsiniz:
+
+```bash
+# Docker image oluştur
+docker build -t qa-blog-automation .
+
+# Container içinde testleri çalıştır
+docker run --rm -v $(pwd)/report.html:/app/report.html qa-blog-automation
+```
+
+### Pipeline Stages
+
+1. **Checkout** - GitHub'dan kod çekme
+2. **Setup Python Environment** - Python ortamı hazırlama
+3. **Install Dependencies** - Python paketlerini yükleme
+4. **Run Tests** - Selenium testlerini çalıştırma
+5. **Generate Allure Report** - Allure raporu oluşturma
+6. **Archive Artifacts** - Test raporlarını arşivleme
+
 ---
 
-**Son Güncelleme:** 14 Ekim 2026
+**Son Güncelleme:** 15 Ekim 2026
 **Test Sonucu:** ✅ 16/16 Başarılı
 **Web Sitesi:** ✅ Profesyonel SEO & Accessibility Optimizasyonlu
+**Jenkins Pipeline:** ✅ CI/CD Entegre
