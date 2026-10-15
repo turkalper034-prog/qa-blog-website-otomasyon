@@ -18,8 +18,8 @@ pipeline {
             steps {
                 echo 'Setting up Python environment...'
                 bat '''
-                    python --version
-                    pip install --upgrade pip
+                    "C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" --version
+                    "C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pip.exe" install --upgrade pip
                 '''
             }
         }
@@ -27,7 +27,7 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies...'
-                bat 'pip install -r requirements.txt'
+                bat '"C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pip.exe" install -r requirements.txt'
             }
         }
         
@@ -36,7 +36,7 @@ pipeline {
                 echo 'Running Selenium tests...'
                 bat '''
                     if not exist allure-results mkdir allure-results
-                    pytest tests/ --alluredir=allure-results --html=report.html --self-contained-html -v
+                    "C:\\Users\\turka\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\pytest.exe" tests/ --alluredir=allure-results --html=report.html --self-contained-html -v
                 '''
             }
         }
