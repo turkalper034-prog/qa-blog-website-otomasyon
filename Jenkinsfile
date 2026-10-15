@@ -41,23 +41,11 @@ pipeline {
             }
         }
         
-        stage('Generate Allure Report') {
-            steps {
-                echo 'Generating Allure test report...'
-                bat 'allure generate allure-results --clean -o allure-report'
-            }
-            post {
-                always {
-                    allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
-                }
-            }
-        }
-        
         stage('Archive Artifacts') {
             steps {
                 echo 'Archiving test artifacts...'
                 archiveArtifacts artifacts: 'report.html', allowEmptyArchive: true
-                archiveArtifacts artifacts: 'allure-report/**/*', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'allure-results/**/*', allowEmptyArchive: true
             }
         }
     }
